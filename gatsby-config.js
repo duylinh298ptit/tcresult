@@ -9,6 +9,19 @@ module.exports = {
     `gatsby-transformer-csv`,
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-source-mysql`,
+      options: {
+        connectionDetails: {
+          host: 'http://192.168.1.51:3306',
+          user: 'root',
+          password: '1234',
+          database: 'sakila'
+        },
+        query: 'SELECT * FROM sakila.tc_result',
+        idFieldName: 'tc_id'
+      }
+    }
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
