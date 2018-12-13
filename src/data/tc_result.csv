@@ -1,0 +1,24 @@
+tc_id,test_viewpoint,username,password,expected_result,actual_result,tester,date,Attachment
+01,"Invalid format email",chu.anh.tuanframgia.com.edev,123dsa456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+02,"Invalid format email",chu.anh.tuan@@framgia.com.edev,12dsadsa3456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+03,"Invalid format email",chu.anh.tuan~framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+04,"Invalid format email",chu.anh.tuan!framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+05,"Invalid format email",chu.anh.tuan#framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+06,"Invalid format email",chu.anh.tuan$framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+07,"Invalid format email",chu.anh.tuan%framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+08,"Invalid format email",chu.anh.tuan^framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+09,"Invalid format email",chu.anh.tuan&framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+10,"Invalid format email",chu.anh.tuan*framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+11,"Invalid format email",chu.anh.tuan(framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+12,"Invalid format email",chu.anh.tuan)framgia.com.edev,123456,"Invalid email",PASsaSED,"Nguyen Thi Hang",NULL,NULL
+13,"Invalid format email",chu.anh.tuan-framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+14,"Invalid format email",chu.anh.tuan_framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+15,"Invalid format email",chu.anh.tuan=framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+16,"Invalid format email",chu.anh.tuan+framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+17,"Invalid format email",chu.anh.tuan{framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+18,"Invalid format email",chu.anh.tuan}framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+19,"Invalid format email",chu.anh.tuan:framgia.com.edev,123456,"Invalid email",PASSED,"Nguyen Thi Hang",NULL,NULL
+20,"Password too short",chu.anh.tuan@framgia.com.edev,12345,"Password is too short!",FAILED,"Nguyen Thi Hang",NULL,...
+21,"Email NULL",null,123456,"Email empty",FAILED,"Nguyen Thi Hang",NULL,...
+22,"Password NULL",chu.anh.tuan@framgia.com.edev,null,"Password empty",FAILED,"Nguyen Thi Hang",NULL,...
+23,"Login successfull",chu.anh.tuan@framgia.com.edev,123456,"Login successfully",PASSED,"Nguyen Thi Hang",NULL,NULL
